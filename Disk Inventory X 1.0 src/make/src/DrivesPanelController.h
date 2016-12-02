@@ -28,5 +28,6 @@
 - (NSArray*) volumes;
 
 - (IBAction) openVolume:(id)sender;
+- (IBAction) ignoredPaths:(id)sender;
 
 @end

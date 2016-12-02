@@ -41,6 +41,9 @@
 		FC37D890075A561700209C78 /* PrefsPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC37D88E075A561700209C78 /* PrefsPanelController.m */; };
 		FC37DADB075B407B00209C78 /* PrefsPageBase.h in Headers */ = {isa = PBXBuildFile; fileRef = FC37DAD9075B407B00209C78 /* PrefsPageBase.h */; };
 		FC37DADC075B407B00209C78 /* PrefsPageBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FC37DADA075B407B00209C78 /* PrefsPageBase.m */; };
+		FC3D098C1DF221760002500B /* IgnoredFilesPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3D098B1DF221760002500B /* IgnoredFilesPanel.xib */; };
+		FC3D09901DF2231D0002500B /* IgnoredFilesWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3D098E1DF2231D0002500B /* IgnoredFilesWindow.h */; };
+		FC3D09911DF2231D0002500B /* IgnoredFilesWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3D098F1DF2231D0002500B /* IgnoredFilesWindow.m */; };
 		FC3FFAD9071074ED004BEC56 /* NTFileDesc-AccessExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3FFAD7071074ED004BEC56 /* NTFileDesc-AccessExtensions.h */; };
 		FC3FFADA071074ED004BEC56 /* NTFileDesc-AccessExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3FFAD8071074ED004BEC56 /* NTFileDesc-AccessExtensions.m */; };
 		FC528433075FD35200374589 /* CocoaTechFoundation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC570184070602110032DFE9 /* CocoaTechFoundation.framework */; };
@@ -218,6 +221,9 @@
 		FC37D88E075A561700209C78 /* PrefsPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsPanelController.m; sourceTree = "<group>"; };
 		FC37DAD9075B407B00209C78 /* PrefsPageBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsPageBase.h; sourceTree = "<group>"; };
 		FC37DADA075B407B00209C78 /* PrefsPageBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsPageBase.m; sourceTree = "<group>"; };
+		FC3D098B1DF221760002500B /* IgnoredFilesPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IgnoredFilesPanel.xib; sourceTree = "<group>"; };
+		FC3D098E1DF2231D0002500B /* IgnoredFilesWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgnoredFilesWindow.h; sourceTree = "<group>"; };
+		FC3D098F1DF2231D0002500B /* IgnoredFilesWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgnoredFilesWindow.m; sourceTree = "<group>"; };
 		FC3FFAD7071074ED004BEC56 /* NTFileDesc-AccessExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NTFileDesc-AccessExtensions.h"; sourceTree = "<group>"; };
 		FC3FFAD8071074ED004BEC56 /* NTFileDesc-AccessExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NTFileDesc-AccessExtensions.m"; sourceTree = "<group>"; };
 		FC528AC5076079B500374589 /* LoadingPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingPanelController.h; sourceTree = "<group>"; };
@@ -358,22 +364,23 @@
 			isa = PBXGroup;
 			children = (
 				FC6ADCA907F99819006FE39B /* AppKit Extension */,
-				FCA4D3FC075E152D0064125F /* OmniAppKitExtensions */,
 				FC69475107511D31000B2832 /* CocoaTechExtensions */,
-				FC9F6B6C0754948000951B41 /* Preferences */,
-				FCBEF4D7054C3F4C007ABD71 /* Helper Classes */,
-				FC84D044074A3E0700E252C8 /* InfoPanel */,
-				FC26D53C07F48AC600301D86 /* SelectionList */,
+				FC68DD6E06073C6800A1B009 /* Documentation */,
 				FC1A6382073AB5F3007ED7C0 /* DrivesPanel */,
-				FCBEF4D4054C3F30007ABD71 /* TreeMapView Classes */,
 				FCBEF4D1054C3F14007ABD71 /* FileKindsTableView Classes */,
 				FCBEF4CA054C3EC5007ABD71 /* FilesOutlineView Classes */,
-				2A37F4ABFDCFA73011CA2CEA /* Main Classes */,
-				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
-				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				FCBEF4D7054C3F4C007ABD71 /* Helper Classes */,
+				FC3D098D1DF2219C0002500B /* IgnoredFiles Classes */,
+				FC84D044074A3E0700E252C8 /* InfoPanel */,
+				2A37F4ABFDCFA73011CA2CEA /* Main Classes */,
+				FCA4D3FC075E152D0064125F /* OmniAppKitExtensions */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				FC9F6B6C0754948000951B41 /* Preferences */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
-				FC68DD6E06073C6800A1B009 /* Documentation */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				FC26D53C07F48AC600301D86 /* SelectionList */,
+				FCBEF4D4054C3F30007ABD71 /* TreeMapView Classes */,
 			);
 			name = "Disk Inventory";
 			sourceTree = "<group>";
@@ -422,6 +429,7 @@
 				FC755297054C3C2900BBC68D /* TreeMap.nib */,
 				FC755299054C3C2900BBC68D /* MainMenu.nib */,
 				FC75529B054C3C2900BBC68D /* LoadingPanel.nib */,
+				FC3D098B1DF221760002500B /* IgnoredFilesPanel.xib */,
 				FC0DFD0007634AC60049E191 /* DonationPanel.nib */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
 				8D15AC360486D014006FF6A4 /* Info.plist */,
@@ -482,6 +490,15 @@
 				FC2788E307D7571C00EDCC97 /* TreeMapView.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FC3D098D1DF2219C0002500B /* IgnoredFiles Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FC3D098E1DF2231D0002500B /* IgnoredFilesWindow.h */,
+				FC3D098F1DF2231D0002500B /* IgnoredFilesWindow.m */,
+			);
+			name = "IgnoredFiles Classes";
 			sourceTree = "<group>";
 		};
 		FC657550075F4D450056F438 /* Toolbar */ = {
@@ -683,6 +700,7 @@
 				FC79EEAD07FC3822000BEBFA /* NSTableViewWithContextMenu.h in Headers */,
 				FC79F14A07FD45A4000BEBFA /* FSItemIndex.h in Headers */,
 				FC6D4B230804040600E21F6D /* DIXFinderCMInstaller.h in Headers */,
+				FC3D09901DF2231D0002500B /* IgnoredFilesWindow.h in Headers */,
 				FC3112E20805857B00075F08 /* FinderCMPrefPage.h in Headers */,
 				FC27C272080728D90073CDF9 /* NTFileDesc-Utilities.h in Headers */,
 			);
@@ -759,6 +777,7 @@
 			files = (
 				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				FC3D098C1DF221760002500B /* IgnoredFilesPanel.xib in Resources */,
 				FC75529D054C3C2900BBC68D /* TreeMap.nib in Resources */,
 				FC75529E054C3C2900BBC68D /* MainMenu.nib in Resources */,
 				FC75529F054C3C2900BBC68D /* LoadingPanel.nib in Resources */,
@@ -823,6 +842,7 @@
 				FC755287054C3BFF00BBC68D /* MainWindowController.m in Sources */,
 				FC755289054C3BFF00BBC68D /* ImageAndTextCell.m in Sources */,
 				FC75528B054C3BFF00BBC68D /* FSItem.m in Sources */,
+				FC3D09911DF2231D0002500B /* IgnoredFilesWindow.m in Sources */,
 				FC75528D054C3BFF00BBC68D /* FileTypeColors.m in Sources */,
 				FC75528F054C3BFF00BBC68D /* FileSystemDoc.m in Sources */,
 				FC755291054C3BFF00BBC68D /* FilesOutlineViewController.m in Sources */,
