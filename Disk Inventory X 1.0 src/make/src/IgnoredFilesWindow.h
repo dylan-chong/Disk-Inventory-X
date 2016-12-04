@@ -8,10 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface IgnoredFilesWindow : NSWindow <NSWindowDelegate> {
+@interface IgnoredFilesWindow : NSWindow {
     NSTextView *ignoredPathsTextView;
 }
 
 @property (assign) IBOutlet NSTextView *ignoredPathsTextView;
+
+- (NSArray *) getIgnoredPaths;
 
 @end

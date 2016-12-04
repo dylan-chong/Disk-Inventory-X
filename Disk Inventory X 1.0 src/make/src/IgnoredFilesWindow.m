@@ -11,8 +11,13 @@
 @implementation IgnoredFilesWindow
 @synthesize ignoredPathsTextView;
 
-- (void) windowWillClose:(NSNotification *)notification {
-    NSLog(@"About to close window");
+- (NSArray *)getIgnoredPaths {
+    return @[@"test", @"something"];
+}
+
+- (void) setDelegate:(id<NSWindowDelegate>)delegate {
+    NSLog(@"Setting delegate");
+    
 }
 
 @end

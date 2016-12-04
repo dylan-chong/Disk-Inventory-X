@@ -108,16 +108,6 @@
 	}
 }
 
-- (IBAction)ignoredPaths:(id)sender {
-//    NSViewController *viewController = [[NSViewController alloc]
-//                                        initWithNibName:@"IgnoredFilesPanel"
-//                                        bundle:nil];
-//    [viewController show];
-    NSWindowController *windowController = [[NSWindowController alloc]
-                                            initWithWindowNibName:@"IgnoredFilesPanel"];
-    [windowController showWindow:nil];
-}
-
 - (BOOL) panelIsVisible
 {
 	return [[self panel] isVisible];
@@ -265,6 +255,21 @@
 	}
 }
 
+#pragma mark -------- Ignored Files -----------------
 
+- (IBAction) ignoredPaths:(id)sender {
+    //    NSViewController *viewController = [[NSViewController alloc]
+    //                                        initWithNibName:@"IgnoredFilesPanel"
+    //                                        bundle:nil];
+    //    [viewController show];
+    NSWindowController *windowController = [[NSWindowController alloc]
+                                            initWithWindowNibName:@"IgnoredFilesPanel"];
+    [windowController showWindow:nil];
+    [[windowController window] setDelegate: self];
+}
+
+- (void) windowWillClose:(NSNotification *)notification {
+    NSLog(@"Window will close");
+}
 
 @end

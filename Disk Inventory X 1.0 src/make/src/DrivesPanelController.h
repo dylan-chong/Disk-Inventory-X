@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface DrivesPanelController : NSObject
+@interface DrivesPanelController : NSObject <NSWindowDelegate>
 {
 	NSMutableArray *_volumes;
 	NSMutableArray *_progressIndicators;
